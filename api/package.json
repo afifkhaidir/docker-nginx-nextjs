@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "name": "docker-api-service",
+  "version": "1.0.0",
+  "description": "docker api service",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "afif.khaidir@gmail.com",
+  "license": "ISC"
+}

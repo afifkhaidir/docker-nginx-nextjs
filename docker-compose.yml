@@ -1,0 +1,19 @@
+version: '3'
+services:
+  frontend:
+    build: ./frontend
+    container_name: frontend_c
+    ports:
+      - '3000:3000'
+    stdin_open: true
+    volumes:
+      - ./frontend:/app
+      - ./app/node_modules
+  api:
+    build: ./api
+    container_name: api_c
+    ports:
+      - '9000:9000'
+    volumes:
+      - ./api:/app
+      - ./app/node_modules
