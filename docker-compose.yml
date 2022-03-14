@@ -3,17 +3,14 @@ services:
   blog:
     build: ./blog
     container_name: blog_c
-    ports:
-      - '3000:3000'
     stdin_open: true
     volumes:
       - ./blog:/app
       - ./app/node_modules
+      - ./app/.next
   api:
     build: ./api
     container_name: api_c
-    ports:
-      - '9000:9000'
     volumes:
       - ./api:/app
       - ./app/node_modules
