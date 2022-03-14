@@ -18,3 +18,10 @@ You have the restriction to NOT modify the api service under (we can assume this
 Required functionality:
 - [ ] Open the home page which has list of blog title
 - [ ] Open the post detail page
+
+
+## Stop the services
+To stop all the running containers, you can run:
+```bash
+$ docker-compose down
+```
