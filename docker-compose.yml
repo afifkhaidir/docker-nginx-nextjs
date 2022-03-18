@@ -4,16 +4,9 @@ services:
     build: ./blog
     container_name: blog_c
     stdin_open: true
-    volumes:
-      - ./blog:/app
-      - ./app/node_modules
-      - ./app/.next
   api:
     build: ./api
     container_name: api_c
-    volumes:
-      - ./api:/app
-      - ./app/node_modules
   nginx:
     build: ./nginx
     container_name: nginx_c
